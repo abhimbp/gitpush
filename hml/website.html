@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <title>Meine Webseite</title>
+        <meta charset="utf8"/>
+    </head>
+    
+        
+        <body>
+            
+            <h1><ins ><center>Der Webentwickler Kurs</center></ins></h1>
+            
+            <hr>
+            
+            
+            <h3>Tag-Übersicht</h3>
+            
+                <p><em>Head-Tag</em>: Ganzes Wissen
+                <br><em>Body-Tag</em>: Infos wie zB Text
+                <br><em>Div-Tag</em>: Organisiert die Struktur einer Webseite
+                <br><em>Title-Tag</em>: Was Oben im Tab angezeigt wird
+                <br><em>Meta-Tag</em>: Grundsätzliche Information (charset = Welcher Zeichensatz, http-equiv = Contenttypen, content = Inhalttypen, name = viewport = definiert Breite und Zoomfaktor)
+                <br><em>Style-Tag</em>: Kann zB das Aussehen der Webseite bearbeiten mit anderer Sprache und auch strukturieren
+                <br><em>H1-Tag</em> -> Header Tag: Überschrift (h1 ist das größte, dann h2, usw. bis h6, danach kein header mehr)
+                <br><em>P-Tag</em> -> Paragraph Tag: Ein Paragraph Text (Kreiert Zeilenumbrüche)
+                <br><em>Br-Tag</em>: sorgt für Zeilenumbruch</p>
+            
+            <hr>
+            
+            
+            <h3>Header Tags</h3>
+           
+            <p>Header Tag: Überschrift (h1 ist das größte, dann h2, usw. bis h6, danach kein header mehr)</p>
+            
+            <hr>
+            
+            <h3> Praragraphen</h3>
+            
+            <p>HTML irgnoeriert whitespace, deswegen muss für jeden Absatz ein P-Tag erstellt werden.
+            <Br> 
+            Br-Tags werden benutzt, damit kein Abstand zwischen den Absätzen entsteht</p>
+          
+            <hr>
+                
+            <h3> Textformatierung</h3>
+            <h4>there is nothing to lose </h4>
+            
+            <p>Dies ist <strong>fetter</strong> Text (strong oder einfach b)</p>            
+            <p>Dies ist <em>kursiver</em> Text (em oder i)</p>
+            <p>Dies ist <ins>unterstrichener</ins> Text (ins)</p>
+            <p>Dies ist <sup>hochgestellter</sup> Text (sup)</p>
+            <p>Dies ist <sub>tiefgestellter</sub> Text (sub)</p>
+            <p>Dies ist <del>durchgestrichener</del> Text (del)</p>
+            <p>Dies ist ein <small> dünner</small> Text (small)</p>
+            <p> Der tag hr sorgt für einen Strich über den Screen</p>
+            <p>align= Ordnet den Text zur rechten Seite des Bildschirms</p>
+            
+            <hr>
+            
+            <h3 >Ungeordnete Listen</h3>
+            
+            <p> 1.Ul-Tag anlegen (ungeordnete Liste) 
+            <br> 2.Für Listenelemente Li-Tag anlegen.</p>
+            <p>Beispiel:</p>
+            
+            <ul> 
+                <li> Mercedes</li>
+                <li> BMW</li>
+                <li> Audi</li> 
+            </ul>
+            
+            <p>Textformatierungs Tags können auch hier hinter dem UL-Tag angewandt werden</p>
+            
+            <hr>
+            
+            <h3>Geordnete Listen</h3>
+            
+            <p>Funktionieren genau wie ungeordnete Listen bloß mit einem OL-Tag
+            <br>Im OL-Tag kann man nun Parameter angeben (start= Legt fest wo die Liste startet, reversed= zählt von oben nach unten, type für die Art der Aufzählung (a für a,b,c /A für A,B,C /I für römische Zahlen))</p>
+            <p>Beispiel:</p>
+            
+            <ol>
+                <li>Mercedes</li>
+                <li>BMW</li>
+                <li>Audi</li> 
+            </ol>
+            
+            <ol start="9">
+                <li>Mercedes</li>
+                <li>BMW</li>
+                <li>Audi</li>
+            </ol>
+            
+            <ol reversed>
+                <li>Mercedes</li>
+                <li>BMW</li>
+                <li>Audi</li>
+            </ol>
+            
+            <ol type="I">
+                <li>Mercedes</li>
+                <li>BMW</li>
+                <li>Audi</li>
+            </ol>
+            
+            <p>Textformatierungs Tags können auch hier hinter dem OL-Tag angewandt werden</p>
+            
+            <hr>
+            
+            
+            <h3>Bilder</h3>
+            
+            <p>Bilder müssen im richtigen Ordner als .png gespeichert werden (Der Ordner, in dem auch der Code gespeichert wird) oder die Bildadresse muss richtig angegeben werden.
+            <br>Bilder werden mit dem img-Tag aufgerufen, in welchem nun noch alle Informationen zu dem Bild mit dem src-Tag definiert werden müssen.
+            <br>In dem img-Tag kann man auch das Bild bearbeiten (width= beeinflusst die breite und skaliert das Bild, height= beeinflusst die höhe und skaliert das Bild).
+            <br>Nur wenn width und height angegeben wird wird beim zweiten parameter nicht mehr skaliert. 
+            <br>Die Einheit für die Parameter ist Pixel.<p/>
+            <p>Der align-Befehl funktioniert auch bei Bildern</p>
+            <p>Beispiel:</p>
+            
+            <img src="Homer_Simpson_2006.png">
+            <p>Dies ist <b>Homer Simpson</b></p>
+            
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png">
+            <p>Dies ist <b>Marge Simpson</b></p>
+            
+            <hr>
+            
+            
+            <h3>Formen</h3>   
+            <p>Um eine Form zu bilden, muss erstmal das Form-Tag definiert werden. Danach kann man angeben, wonach gefragt werden soll und mit Hilfe des Input-Tags von welchem Typ die Eingabe sein soll.
+            <br>Um einen Platzhalter in den Boxen zu definieren wird die methode placeholder im Input-Tag benutzt.</p>
+            <p>Beispiel:</p>
+            
+            <form>
+                <p>Benutzername: <input type "text" placeholder="Dein Benutzername"> </p>
+                <p>Passwort: <input type "text" placeholder="Dein Passwort"> </p>           
+                <p>Eingeloggt bleiben? <input type="checkbox"></p>
+                
+            <p>Man kann den Input Tags auch Nemen und Wert geben, um später mit ihnen weiter zu arbeiten (zB sieht eine Webseite für jemanden u18 anders aus, als die für o18). 
+            <br> Das klappt jedoch nur, wenn beide Inout-Tags den gleichen Namen haben</p>
+                <p>Unter 18:  <input type="radio" name="age" value="u18"></p>
+                <p>Über 18:  <input type="radio" name="age" value="o18"></p>
+                
+            <p>Mit dem Select-Tag gibt man dem Nutzer die option (Option-Tag), aus mehreren vorgegebene Optionen zu wählen.
+            <br>Mit einem selected im Option-tag wählt man aus, was ales erstes in der Bxox stehen soll.</p>
+                <p>Lieblingsessen
+                        <select>
+                            <option>Pizza</option>
+                        <option>Döner</option>
+                        <option>Spaghetti</option>
+                        <option selected>Wähle eins aus</option>
+                    </select></p>    
+                   
+           <p>Mit dem Typ submit baut man einen Knopf ein, mit dem der user die angegebenen Informationen übergeben kann. Über "value" im Input-Tag kann man den Text verändern. Man kann in den Form-Tag noch eine Aktion einbauen, für Links zb einfach den Link reinkopieren.</p> 
+                <p><input type="submit" value="Einloggen"></p>     
+            </form>
+            
+            <hr>
+            
+            <h3>Tabellen</h3>
+            
+            <p>Erstmal tabel-tag anlegen. Eine Zeile erstellt man mit dem TR-Tag. Um diesem Feld der Tabelle Informationen hinzuzufügen benuzt man den TD-Tag.
+            <br>Um Überschriften zu erstellen erstellt man den Thead-Tag, in welchem man nun mit dem th-Tag die namen zuweist</p>
+            <p>Beispiel:</p>
+            
+            <table>   
+                    <thead>
+                        <tr>
+                            <th>Auto</th>
+                            <th>PS</th>
+                        </tr>
+                    </thead>              
+                <tbody>
+                    <tr>  
+                        <td>Mercedes</td>
+                        <td>350</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Audi</td>
+                        <td>300</td>            
+                    </tr>
+                </tbody>          
+            </table>
+            
+            <hr>
+            
+            
+            <h3 id="Links">Links</h3>
+            
+            <p>Um Links anzulegen erstmal den a-Tag anlegen. In dem Anfangstag kommt nun nach href der Link in Anführungszeichen. Zwischen beiden Tags wird angegeben was auf unser Webseite angezeigt wird.</p>
+            <p>Beispiel:</p>
+            
+                <p> <a href="http://www.google.com">Hier klicken um zu Google zu gelangen</a></p>
+            
+            <p>Man kann auch Bilder anstatt Text zu dem Link einfügen.</p>
+            
+                <p> <a href="http://wikipedia.org"> <img src="1200px-Wikipedia-logo-v2.svg.png" width="100"></a></p>
+            
+            <p>Um bei einer Webseite zu einem beliebigen Punkt zu gelangen, als href #Top benutzen (nach dem Hashtag kann ein beliebiges Wort kommen, welches man nun als ID benutzt).
+            <br> Man kann hiermit auch zu einem beliebigen Teil der Webseite "springen", indem man im p Tag eine ID (in diesem Fall Top) deklariert.</p>
+            
+                <p> <a href="#Links"> Hier klicken um zum Unterpunkt "Links" gelangen</a></p>
+            
+            <p>Man kann auch auf interne Webseiten verweisen, die im eigenen Verzeichnis gespeichert sind (also "offline"). Dies geht nur, wenn sie im gleichen Ordner liegen.</p>
+            
+                <p> <a href ="helloworld.html">Hier zur eigenen Webseite</a></p>
+            
+            <hr>
+            
+            
+            <h3>HTML Entities</h3>
+            
+            <p>Die HTML-Entities sind dafür da, um sonderzeichen in html darzustellen. Manche Sonderzeichen werden im HTML Code benutzt und können so nicht einfach ausgegeben werden.
+            <br> Dafür gibt es die HTML Entities. </p>
+            <p>Beispiel:</p>
+            
+                <p>&lt;a&gt;</p>
+            
+            <p> <a href="https://wiki.selfhtml.org/wiki/Zeichenreferenz">Für die komplette Liste hier klicken.</a></p>
+            
+            <hr>
+            
+            
+            <h3>iFrames</h3>
+            
+            <p>iFrames werden benutzt um andere Webseiten in einem Fenster anzeigen zu lassen. Die Größe kann man wieder mit width und hight definieren</p>
+            <p>Beispiel:</p>
+            
+                <iframe src="my-webpage.html"></iframe>
+            
+            <p>Nun in etwas größer:</p>
+            
+                <iframe src="my-webpage.html" width="500"></iframe>
+            
+            <p>Dies geht auch mit YT-Links, hier auf teilen, dann auf einbetten und danach kopie and paste.</p>
+            <p>Beispiel:</p>
+            
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ns7nPKilDDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+            
+            <hr>
+            
+            <p>Mehr Informationen zu Tags und CSS </p>
+            <form action="https://www.html-seminar.de/downloads/html5-css-referenz.pdf">
+            <p><input type="submit" value="Click me"></p>
+            </form>
+            <p> <a href="#top"> Hier klicken um nach Oben zu gelangen</a></p>
+                    
+   </body>  
+</html>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </body>
+
+</html>
